@@ -1,0 +1,64 @@
+// *************************************
+//
+//   Nav
+//   -> Global utilities
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+$nav-height: 80px;
+
+// -------------------------------------
+//   Background
+// -------------------------------------
+
+.nav {
+	background: $color1;
+	background-color: white;
+
+	// ----- Logo ----- //
+	.logo {
+		@include transition(all .25s ease);
+		display: inline-block;
+		margin: 0 80px 0 20px;
+		vertical-align: middle;
+	    max-width: 200px;
+	    height: $nav-height;
+	    line-height: $nav-height;
+	    img {
+	    	vertical-align: middle;
+	    }
+	}
+
+	// ----- Tab ----- //
+	a.tab {
+		display: inline-block;
+	    text-decoration: none;
+	    vertical-align: middle;
+	    padding: 0 $b-space;
+	    height: $nav-height;
+        line-height: $nav-height;
+        color: #555;
+        &:hover {
+        	background-color: #f2f2f2;
+        	color: #333;
+        }
+        &.is-active {
+        	border-bottom: 5px solid $color1;
+        }
+	}
+	.tab-right {
+		height: 80px;
+		line-height: 80px;
+		float: right;
+	}
+}
+
+.wrap {
+	background-color: #fff;
+	box-shadow: 0 3px 2px rgba(0,0,0,0.05);
+}
+

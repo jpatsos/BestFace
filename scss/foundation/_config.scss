@@ -1,0 +1,150 @@
+// *************************************
+//
+//   Config
+//   -> Fonts, Variables
+//
+// *************************************
+
+// -------------------------------------
+//   @font-face
+// -------------------------------------
+
+// ----- Open Sans ----- //
+
+// +font-face('OpenSans','../fonts/open-sans/', 'OpenSans');
+// +font-face('OpenSans','../fonts/open-sans/', 'OpenSansBold', bold);
+// +font-face('OpenSans','../fonts/open-sans/', 'OpenSansItalic', normal, italic);
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/open-sans/OpenSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/open-sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans/OpenSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans/OpenSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/open-sans/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans/OpenSans-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../fonts/open-sans/OpenSans-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/open-sans/OpenSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans/OpenSans-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans/OpenSans-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/open-sans/OpenSans-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans/OpenSans-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+// ----- Palette ----- //
+
+// $color1: #66101F;
+// $color2: #857E61;
+// $color3: #EAF4F5;
+// $color4: #BDC0B5;
+// $color5: #1D1E18;
+
+$color1: #AEC9C1;
+$color2: #7BC3B2;
+$color3: #EAF4F5;
+$color4: #BDC0B5;
+$color5: #1D1E18;
+$color6: #AD3124;
+
+
+
+// ----- Base ----- //
+
+$c-background-invert: white;
+$c-background: $color1;
+$c-border: lighten($color1, 30%);
+$c-highlight: $color1;
+$c-subdue: lighten($color1, 40%);
+$c-text-invert: white;
+$c-text: #464c3e;
+
+// ----- Components ----- //
+
+// ...
+
+// ----- Structures ----- //
+
+// ...
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+// ----- Borders & Box Shadow ----- //
+
+$b-borderRadius: 3px;
+$b-borderStyle: solid;
+$b-borderWidth: 2px;
+$b-border: $b-borderWidth $b-borderStyle $c-border;
+$b-boxShadow: 0 2px 0 rgba($c-text, 0.25);
+
+// ----- Typography ----- //
+
+$b-fontFamily-heading: penSans-Light;
+// $b-fontFamily-light: merriweather_light;
+$b-fontFamily-light: OpenSans-Light;
+$b-fontFamily: penSans-Light, sans-serif;
+$b-fontSize: 16px;
+$b-fontSize-xs: 75%;
+$b-fontSize-s: 90%;
+$b-fontSize-l: 115%;
+$b-fontSize-xl: 150%;
+$b-fontSize-h1: 200%;
+$b-fontSize-h2: 300 177.78%/1.3 merriweather, Georgia, serif;
+$b-fontSize-h3: 125%;
+$b-fontSize-h4: 110%;
+$b-lineHeight: 1.5;
+
+// ----- Sizing ----- //
+
+$b-maxWidth: em(1200px);
+$b-maxWidth-xs: em(478px);
+$b-maxWidth-s: em(700px);
+$b-space: em(20px);
+$b-space-xs: $b-space * 0.25;
+$b-space-s: $b-space * 0.5;
+$b-space-l: $b-space * 2;
+$b-space-xl: $b-space * 4;
+$b-space-xxl: $b-space * 5;
+$b-space-xxxl: $b-space * 8;
+$b-space-xxxxl: $b-space * 10;
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+// ----- Grid ----- //
+
+// Breakpoints
+
+$g-s: em(480px);
+$g-m-max: em(799px);
+$g-m: em(800px);
+$g-l: em(1024px);
+
+// Settings
+
+$g-columns: 12;
+$g-defaults: "s" $g-s, "m" $g-m, "l" $g-l;
+$g-gutter: $b-space;
+$g-silent: false;
+
+// Selector
+
+$g-selector: if($g-silent, unquote("%"), unquote("."));
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+// ...

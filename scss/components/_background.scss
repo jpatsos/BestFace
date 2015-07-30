@@ -1,0 +1,37 @@
+// *************************************
+//
+//   Well
+//   -> Vertical spacing
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//// *************************************
+//
+//   Row
+//   -> Width-spanning blocks
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .row[a|b]
+//   / ...
+//
+// *************************************
+
+.bc-dark {
+	background-color: $color1;
+}
+
+.bc-dark-light {
+	background-color: lighten($color1,5%);
+}
+
+.bc-blue {
+	background-color: $color2;
+}
+
+.bc-grey {
+	background-color: $color3;
+}

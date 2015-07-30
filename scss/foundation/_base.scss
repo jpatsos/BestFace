@@ -1,0 +1,113 @@
+// *************************************
+//
+//   Base
+//   -> Tag-level settings
+//
+// *************************************
+
+html {
+  background: $c-background-invert;
+  color: $c-text;
+  font-family: $b-fontFamily;
+  font-size: $b-fontSize;
+  line-height: $b-lineHeight;
+}
+
+body {
+  font-size: 100%;
+}
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+ul, p {
+  margin-bottom: $b-space;
+  margin-top: 0;
+}
+
+li {
+  margin-bottom: $b-space-s;
+  margin-top: 0;
+}
+
+// ----- Headings ----- //
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  // font-family: $b-fontFamily-heading;
+  // font-weight: bold;
+  // line-height: 1.2;
+  margin-bottom: $b-space-xs;
+  margin-top: 0;
+}
+
+h1, .h1 {
+  font-size: $b-fontSize-h1;
+}
+
+h2, .h2 {
+  font: $b-fontSize-h2;
+}
+
+h3, .h3 {
+  font-size: $b-fontSize-h3;
+}
+
+h4, .h4 {
+  font-size: $b-fontSize-h4;
+}
+
+// ----- hr ----- //
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  background: #e0e0e0;
+  border: 0;
+  height: 1px;
+  text-align: center;
+}
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+// ----- Links ----- //
+
+a {
+  // border-bottom: $b-border;
+  color: $c-highlight;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    // border-bottom-color: $c-highlight;
+    color: $c-subdue;
+  }
+}
+
+// ----- Images ----- //
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+.service-toggle {
+  display: inline-block;
+  font-size: 122.22%;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  @media screen and (min-width: $g-s){
+    font-size: 177.78%;
+  }
+  @media screen and (min-width: $g-m){
+    font-size: 233.33%;
+  }
+}

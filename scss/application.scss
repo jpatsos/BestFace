@@ -1,0 +1,57 @@
+// *************************************
+//
+//   [Project Name] - MVCSS v4.0.13
+//   -> Manifest
+//
+// *************************************
+
+// -------------------------------------
+//   Foundation
+// -------------------------------------
+
+@import "compass";
+
+@import 'foundation/reset2';
+@import 'foundation/helpers';
+@import 'foundation/config';
+@import 'foundation/base';
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+@import 'components/bucket';
+@import 'components/card';
+@import 'components/cell';
+@import 'components/grid';
+@import 'components/row';
+@import 'components/well';
+@import 'components/callout';
+@import 'components/background';
+@import 'components/buttons';
+// @import 'components/materialize';
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+@import 'structures/nav';
+// @import 'structures/footer';
+
+// -------------------------------------
+//   Vendor
+// -------------------------------------
+
+// Third-party style imports, if needed
+
+// -------------------------------------
+//   Foundation - Tools
+// -------------------------------------
+
+@import 'foundation/tools';
+
+// -------------------------------------
+//   Inbox
+// -------------------------------------
+
+// ...
