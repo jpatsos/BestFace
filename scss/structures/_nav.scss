@@ -12,7 +12,15 @@
 $nav-height: 80px;
 
 // -------------------------------------
-//   Background
+//   Main
+// -------------------------------------
+
+main {
+	margin-top: $nav-height;
+}
+
+// -------------------------------------
+//   Nav
 // -------------------------------------
 
 .nav {
@@ -54,6 +62,14 @@ $nav-height: 80px;
 		height: 80px;
 		line-height: 80px;
 		float: right;
+	}
+
+	// ----- Fixed ----- //
+	&.is-fixed {
+		width: 100%;
+		z-index: 1000;
+		position: fixed;
+		top: 0; left: 0; 
 	}
 }
 

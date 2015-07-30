@@ -5,37 +5,6 @@
 //
 // *************************************
 
-// -------------------------------------
-//   @font-face
-// -------------------------------------
-
-// ----- Open Sans ----- //
-
-// +font-face('OpenSans','../fonts/open-sans/', 'OpenSans');
-// +font-face('OpenSans','../fonts/open-sans/', 'OpenSansBold', bold);
-// +font-face('OpenSans','../fonts/open-sans/', 'OpenSansItalic', normal, italic);
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/open-sans/OpenSans-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/open-sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/open-sans/OpenSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/open-sans/OpenSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/open-sans/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/open-sans/OpenSans-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'OpenSans-Light';
-  src: url('../fonts/open-sans/OpenSans-Light.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/open-sans/OpenSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/open-sans/OpenSans-Light.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/open-sans/OpenSans-Light.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/open-sans/OpenSans-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/open-sans/OpenSans-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-
 
 // -------------------------------------
 //   Colors
@@ -93,14 +62,14 @@ $b-boxShadow: 0 2px 0 rgba($c-text, 0.25);
 $b-fontFamily-heading: penSans-Light;
 // $b-fontFamily-light: merriweather_light;
 $b-fontFamily-light: OpenSans-Light;
-$b-fontFamily: penSans-Light, sans-serif;
+$b-fontFamily: OpenSans, sans-serif;
 $b-fontSize: 16px;
 $b-fontSize-xs: 75%;
 $b-fontSize-s: 90%;
 $b-fontSize-l: 115%;
 $b-fontSize-xl: 150%;
 $b-fontSize-h1: 200%;
-$b-fontSize-h2: 300 177.78%/1.3 merriweather, Georgia, serif;
+$b-fontSize-h2: 300 177.78%/1.3 OpenSans, Georgia, serif;
 $b-fontSize-h3: 125%;
 $b-fontSize-h4: 110%;
 $b-lineHeight: 1.5;
