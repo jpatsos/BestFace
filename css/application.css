@@ -525,6 +525,14 @@ tfoot td {
     height: 150%;
     width: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/bf\/scss\/foundation\/_config\.scss}line{font-family:\000039}}
+.z-depth-1 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/bf\/scss\/foundation\/_config\.scss}line{font-family:\0000312}}
+.z-depth-1-half {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/bf\/scss\/foundation\/_base\.scss}line{font-family:\000038}}
 html {
   background: white;
