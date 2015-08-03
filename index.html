@@ -8,6 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+    
+
+        
+
+
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/application.css">
 
@@ -24,23 +32,46 @@
         <!-- Start/Stop: /MAMP/ -->
         <!-- Start/Stop [Y][Y][N][Y] -->
 
-        <nav class="nav is-fixed">
+        <nav class="navigation is-fixed">
             <div class="wrap">
                 <div class="cell">
-                    <div class="logo"><img alt="Best Face Orlando" src="img/logo-black.png"></div>
-                    <a href="" class="tab is-active">About</a>
-                    <a href="" class="tab">Services</a>
-                    <a href="" class="tab">Memberships</a>
-                    <a href="" class="tab">Events</a>
-                    <a href="" class="tab">Blog</a>
-                    <div class="tab-right">
-                        <a href="" class="btn">Book Apointment</a>
+                    <div class="mobile-hide">
+                        <div class="logo"><img alt="Best Face Orlando" src="img/logo-new.png"></div>
+                        <div class="tabs">
+                            <a href="" class="tab is-active">About</a>
+                            <a href="" class="tab">Services</a>
+                            <a href="" class="tab">Memberships</a>
+                            <a href="" class="tab">Events</a>
+                            <a href="" class="tab">Blog</a>
+                        </div>
+                        
+                        <div class="tab-right">
+                            <a href="" class="btn">Book Apointment</a>
+                        </div>
+                    </div>
+                    <div class="hidden mobile-show">
+                        <div class="logo"><img alt="Best Face Orlando" src="img/logo-new.png"></div>
+                        <div class="tab-right">
+                            <i class="material-icons nav-phone">phone</i>
+                            <a href="#" class="menu-button" id="menuButton">
+                                <span class="burger-icon"></span>
+                            </a>
+                        </div>
+                        <div class="drawer hidden mobile-show">
+                            <ul class="nav">
+                                <li><a href="">About</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href="">Memberships</a></li>
+                                <li><a href="">Events</a></li>
+                                <li><a href="">Blog</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <main role="main">
+        <main role="main" class="por">
             <header class="row callout callout--defy">
                 <div class="cell well--xxl tac">
                     <h1 class="mbf tsheader twl tci">Defy <span class="twb">time</span> this summer!</h1>
@@ -51,7 +82,7 @@
             </header>
             <div class="row bc-grey">
                 <div class="cell well--xxl">
-                    <h2 class="ttu twb tac mbl">Featured Services</h2>
+                    <h2 class="tfl tac mbl">Featured Services</h2>
                     <div class="g">
                         <div class="g-b g-b--m--1of3">
                             <div class="card">
@@ -71,7 +102,7 @@
                         <div class="g-b g-b--m--1of3">
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="http://materializecss.com/images/sample-1.jpg">
+                                    <img src="img/hair1.jpg">
                                     <span class="card-title">Unwanted hair</span>
                                 </div>
                                 <div class="card-content">
@@ -86,7 +117,7 @@
                         <div class="g-b g-b--m--1of3">
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="http://materializecss.com/images/sample-1.jpg">
+                                    <img src="img/body1.jpg">
                                     <span class="card-title">Shape your body</span>
                                 </div>
                                 <div class="card-content">
@@ -109,43 +140,57 @@
                 </div>
             </div>
             <div class="row">
-                <div class="cell well">
-                    <h2>Why choose Aesthetimed?</h2>
+                <div class="cell well--xxl">
+                    <h2 class="tfl tac mbm">Why choose Aesthetimed?</h2>
                     <div class="well">
-                        <ul class="collapsible" data-collapsible="accordion">
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Reputation</div>
-                                <div class="collapsible-body">
-                                    <h3>Reputation</h3> 
-                                    <p>AesthetiMED is the industry leader in Orlando, Florida, specializing in laser hair removal and medical aesthetic treatments for nearly two decades.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Reputation</div>
-                                <div class="collapsible-body">
-                                    <h3>Reputation</h3> 
-                                    <p>For laser hair removal as well as our other high-quality services, each licensed treatment provider receives more than 40 hours of medically supervised training before being AesthetiMED Certified, and each facility is overseen by a team of locally based medical professionals, including a physician licensed in that state.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Proven Technology</div>
-                                <div class="collapsible-body">
-                                    <h3>Proven Technology</h3> 
-                                    <p>Best-in-class technology gives us the competitive edge. At AesthetiMED, we are constantly researching and testing new technology so we can continue to offer our clients the most advanced and effective treatments possible.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Safety First</div>
-                                <div class="collapsible-body">
-                                    <h3>Safety First</h3> 
-                                    <p>Your safety is our #1 priority at Sona. Because every client is unique, our trained professionals assess a number of individual factors to ensure that we are providing the most effective treatments utilizing FDA-approved technology. All treatment parameters are determined by our Medical Directors and are based on industry research as well as our extensive experience.</p>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="g">
+                            <div class="g-b g-b--m--1of2">
+                                <ul class="collapsible" data-collapsible="accordion">
+                                    <li>
+                                        <div class="collapsible-header active"><!-- <i class="material-icons">filter_drama</i> --><h3>Reputation</h3><i class="material-icons collapsible-icon">keyboard_arrow_down</i></div>
+                                        <div class="collapsible-body">
+                                            <p>AesthetiMED is the industry leader in Orlando, Florida, specializing in laser hair removal and medical aesthetic treatments for nearly two decades.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header"><!-- <i class="material-icons collapsible-icon">filter_drama</i> --><h3>Trained Professionals</h3><i class="material-icons collapsible-icon">keyboard_arrow_down</i></div>
+                                        <div class="collapsible-body">
+                                            <p>For laser hair removal as well as our other high-quality services, each licensed treatment provider receives more than 40 hours of medically supervised training before being AesthetiMED Certified, and each facility is overseen by a team of locally based medical professionals, including a physician licensed in that state.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header"><!-- <i class="material-icons collapsible-icon">filter_drama</i> --><h3>Proven Technology</h3><i class="material-icons collapsible-icon">keyboard_arrow_down</i></div>
+                                        <div class="collapsible-body">
+                                            <p>Best-in-class technology gives us the competitive edge. At AesthetiMED, we are constantly researching and testing new technology so we can continue to offer our clients the most advanced and effective treatments possible.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header"><!-- <i class="material-icons collapsible-icon">filter_drama</i> --><h3>Safety First</h3><i class="material-icons collapsible-icon">keyboard_arrow_down</i></div>
+                                        <div class="collapsible-body">
+                                            <p>Your safety is our #1 priority at Sona. Because every client is unique, our trained professionals assess a number of individual factors to ensure that we are providing the most effective treatments utilizing FDA-approved technology. All treatment parameters are determined by our Medical Directors and are based on industry research as well as our extensive experience.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            
         </main>
+
+        <footer>
+            <div class="cell well--xxl">
+                <div class="logo tal mbm"><img alt="Best Face Orlando" src="img/logo-all-white.png"></div>
+                <div class="g">
+                    <div class="g-b g-b--m--1of3">
+                        <h3>Hello</h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="" class="mobile-cta hidden mobile-show">Book Your Appointment Today<i class="material-icons mobile-cta-icon">close</i></a>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="/js/bin/materialize.js"></script>

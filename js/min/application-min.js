@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".collapsible").collapsible({accordion:!1})});
+$(document).ready(function(){$(".collapsible").collapsible({accordion:!1});var e=$("#menuButton"),l=$(".drawer");e.on("click",function(o){e.toggleClass("is-active"),l.toggleClass("toggled"),o.preventDefault()})});

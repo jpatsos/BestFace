@@ -10,6 +10,7 @@
 // -------------------------------------
 
 $button-color: $color6;
+$button-color: $teal;
 
 
 // -------------------------------------
@@ -30,10 +31,16 @@ $button-color: $color6;
     background-color: $button-color;
     text-align: center;
     letter-spacing: .5px;
+    @extend .z-depth-1;
     @include transition(.2s ease-out);
     cursor: pointer;
 
     &:hover {
         background-color: lighten($button-color, 5%);
     }
+
+    &.red {
+        
+    }
 }
+

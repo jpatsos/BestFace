@@ -20,10 +20,85 @@ main {
 }
 
 // -------------------------------------
+//   Tabs
+// -------------------------------------
+
+.tabs {
+	display: inline-block;
+}
+
+// -------------------------------------
+//   Menu Button (mobile)
+// -------------------------------------
+
+.drawer {
+	@include transition(all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms);
+	max-height: 0;
+	overflow: hidden;
+	width: 100%;
+	opacity: 0;
+	&.toggled {
+	    opacity: 1;
+	    max-height: 230px;
+	}
+	ul.nav {
+		margin: 10px 0;
+	    padding: 0;
+	    list-style: none;
+		li {
+		    margin: 0;
+		    padding: 0;
+		    a {
+		    	@include transition(color 222ms ease);
+		    	display: block;
+		    	padding: 10px 30px;
+		    	color: black;
+		    	font-size: 16px;
+		    	font-weight: 500;
+		    	opacity: .5;
+		    	&:hover {
+	    		    background: rgba(0,0,0,0.015);
+				    text-decoration: none;
+				    opacity: 1;
+		    	}
+		    }
+		}
+	}
+}
+
+// -------------------------------------
+//   Nav Phone (mobile)
+// -------------------------------------
+
+.nav-phone {
+	vertical-align: middle;
+	margin-right: 20px;
+	font-size: 175%;
+}
+
+// -------------------------------------
+//   Menu Button (mobile)
+// -------------------------------------
+
+.burger-icon {
+	@include burger(25px, 3px, 5px, #444);
+}
+
+.menu-button.is-active .burger-icon {
+	@include burger-to-cross;
+}
+
+.menu-button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+}
+
+// -------------------------------------
 //   Nav
 // -------------------------------------
 
-.nav {
+.navigation {
 	background: $color1;
 	background-color: white;
 

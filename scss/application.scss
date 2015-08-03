@@ -29,14 +29,16 @@
 @import 'components/callout';
 @import 'components/background';
 @import 'components/buttons';
-// @import 'components/materialize';
+@import 'components/burger';
+@import 'components/collapsible';
+@import 'components/cta';
 
 // -------------------------------------
 //   Structures
 // -------------------------------------
 
 @import 'structures/nav';
-// @import 'structures/footer';
+@import 'structures/footer';
 
 // -------------------------------------
 //   Vendor
@@ -55,3 +57,18 @@
 // -------------------------------------
 
 // ...
+
+.hidden {
+	display: none;
+}
+
+.mobile-hide {
+    @media (max-width: $g-m) {
+        display: none;
+    }
+}
+.mobile-show {
+    @media (max-width: $g-m) {
+        display: block;
+    }
+}
