@@ -107,6 +107,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/default1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15557,
+		"inputAbbreviatedPath": "\/img\/default1.jpg",
+		"outputAbbreviatedPath": "\/img\/default1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/hair1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
